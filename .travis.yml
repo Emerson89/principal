@@ -1,6 +1,10 @@
 language: python
 python:
-  - "3.6"
+- '3.6'
 script:
-  - py.test test.py
-
+- py.test test.py
+deploy:
+  provider: heroku
+  app: app-4linux-helloworld
+  api:
+    secure: vpw+6EumnPWesA1+eld0ImejOb0nVFv22B4mnI5hc0vCYLJ6hKqYECj5rdazrNktMQXeaYlPYHI5zeMYhuJ1CjbRJymDgE8y74RAil23Ym2SzSKpQekYo/UkrRiVrGXrIKg6juSOA9CKCsoM39X3AzPaKxxySciTuRFnVHX2AQnJULjzwb5mFK42q6hoiUDxfPiqinDrHbUbMj7XOK6twuXDneQgxcFD/LcnHdJnQfcv3hIrkT463+Z8jVAIGcR72xvl9hkMx9BnywPV8/WoIgr7ktQUftg7Ps+0tSi+bkdbULk5Vr7u2i2i+edD7DzBJA/TFmcYcM+XAhEdIU6S5hvMENXKAdtmMczZ8VPT5/LRZ+yoOMTGbrCHXotSoksZNMcAFDruFJjdrkEROc5G8t6Z7kv4qvPGQ6j1a7Xrbc6qen+ZN/chTAxldY9orGmO9I35Rz0vvewAngrTyIOl7gSOz/4nxIHTopDhJAa+2nG4ahsf2q0xaJ2qY8L3EW7XuBnU3iINzn26+kz7+8+p8U+q3uDuIVeoHm85C2xPM5sRL1Z0ztJ5/evMlt/Pa3kBLFKv7Bl/27VkrYDwfkbOILFOLfB4KKQIh/PJ5q66Xxsr/Jv/KL2XsDBWrbZ8ycl3CDAP6v3Re/RMkOo3cOD9EPXnIOpXBVK70EqVNUMgmJQ=
